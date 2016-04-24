@@ -1,0 +1,5 @@
+@mixin break {
+  @media all and (max-width: 760px) {
+    @content;
+  }
+}

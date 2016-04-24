@@ -1,0 +1,43 @@
+@import "_media";
+
+.resume {
+  height: 100%;
+  width: 100vw;
+  padding: 20px 0 0;
+  display: block;
+  overflow-y: auto;
+  float: left;
+
+  @include break {
+    //left: 0;
+    width: 95% !important;
+  }
+
+  blockquote {
+    margin-bottom: 2px;
+  }
+  aside {
+    margin-bottom: 10px;
+  }
+  .resume-format {
+    max-width: 900px;
+    h2 {
+      font-family: 'Fauna One', serif;
+      font-size: 26px;
+      font-weight: bold;
+    }
+    h3 {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: left;
+    }
+    ul.horz-list {
+      list-style-type: none;
+      padding: 0;
+      text-align: left;
+      li {
+        display: inline;
+      }
+    }
+  }
+}
