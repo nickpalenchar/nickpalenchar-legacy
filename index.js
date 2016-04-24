@@ -5,6 +5,7 @@ var express = require('express'),
 
 app.use('/api/js', express.static(__dirname + '/js'));
 app.use('/bower_components', express.static(__dirname + '/bower_components'));
+app.use('/public', express.static(__dirname + '/public'));
 
 app.get('/', function(req, res){
     res.sendFile(path.join(__dirname, 'index.html'))

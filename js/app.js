@@ -8,8 +8,27 @@ var app = angular.module('app', ['ui.router.state'])
     })
 })
 
-.directive('about', function () {
+.directive('innerAbout', function () {
     return {
-        templateUrl: 'views/about.html'
+        templateUrl: 'api/js/views/about.html'
+    }
+})
+
+.directive('innerProjects', function () {
+    return {
+        templateUrl: 'api/js/views/projects.html'
+    }
+})
+
+.directive('innerExperience', function () {
+    return {
+        templateUrl: 'api/js/views/experience.html'
+    }
+})
+
+.directive('innerContact', function () {
+    return {
+        templateUrl: 'api/js/views/contact.html'
     }
 });
+

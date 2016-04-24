@@ -1,3 +1,5 @@
+@import "_media";
+
 body {
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -5,8 +7,17 @@ body {
   line-height: 1.5;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-weight: 300;
+  &.no-margin {
+    margin: 0 0 0 0;
+  }
+  &.no-top-margin {
+    margin-top: 0;
+  }
+}
+h3 {
+  font-size: 22px;
 }
 
 .fa {
@@ -21,4 +32,21 @@ h2 {
 
 p {
   margin: 0 0 16px;
+  padding: 0 12%;
+  @include break{
+    padding: 0;
+  }
+}
+
+blockquote {
+  font-style: italic;
+  &:before {
+    content: '"';
+  }
+  &:after {
+    content: '"';
+  }
+  @include break {
+    margin: 0;
+  }
 }
