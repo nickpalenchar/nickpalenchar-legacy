@@ -1,0 +1,36 @@
+@mixin animation-duration($n){
+  -webkit-animation-duration: $n;
+     -moz-animation-duration: $n;
+       -o-animation-duration: $n;
+          animation-duration: $n;
+}
+
+@mixin animation-timing-function($n) {
+  -webkit-animation-timing-function: $n;
+  -moz-animation-timing-function: $n;
+  -o-animation-timing-function: $n;
+  animation-timing-function: $n;
+}
+
+@mixin animation-fill-mode($n) {
+  -webkit-animation-fill-mode: $n;
+  -moz-animation-fill-mode: $n;
+  -o-animation-fill-mode: $n;
+  animation-fill-mode: $n;
+}
+
+@mixin flex-direction($n) {
+  -ms-flex-direction: $n;
+  -webkit-flex-direction: $n;
+  flex-direction: $n;
+}
+
+@mixin easeOut {
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@mixin flex-wrap($n) {
+  -webkit-flex-wrap: $n;
+  -ms-flex-wrap: $n;
+  flex-wrap: $n;
+}
