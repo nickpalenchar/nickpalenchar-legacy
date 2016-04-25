@@ -21,6 +21,8 @@
   }
   .resume-format {
     max-width: 900px;
+    position: relative;
+    margin: 0 auto;
     h2 {
       font-family: 'Fauna One', serif;
       font-size: 26px;
@@ -36,7 +38,7 @@
       padding: 0;
       text-align: left;
       li {
-        display: inline;
+        //display: inline;
       }
     }
   }

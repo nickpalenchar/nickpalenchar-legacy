@@ -54,7 +54,9 @@ blockquote {
   .resume aside {
     margin-bottom: 10px; }
   .resume .resume-format {
-    max-width: 900px; }
+    max-width: 900px;
+    position: relative;
+    margin: 0 auto; }
     .resume .resume-format h2 {
       font-family: 'Fauna One', serif;
       font-size: 26px;
@@ -67,8 +69,6 @@ blockquote {
       list-style-type: none;
       padding: 0;
       text-align: left; }
-      .resume .resume-format ul.horz-list li {
-        display: inline; }
 
 * {
   box-sizing: border-box; }
